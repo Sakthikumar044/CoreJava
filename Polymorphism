@@ -1,0 +1,29 @@
+package day13;
+
+class Ride {
+	
+	//overloading
+	   int add(int a, int b) { 
+	        return a + b;
+	    }
+
+	    int add(int a, int b, int c) {
+	        return a + b + c;
+	    }
+	    
+	    //overriding
+	    public String toString() {
+	    	return "this is an overriding of to string function";
+	    }
+
+
+}
+class OverRiding {
+	public static void main(String[] args) {
+		Ride user = new Ride();
+		System.out.println("addition of two number :"+user.add(11, 22));
+		System.out.println("addition of three number :"+user.add(11, 22));
+		System.out.println(user);
+		
+	}
+}
